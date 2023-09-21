@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desat-blue: hsl(244, 38%, 16%);
+    --violet:hsl(277, 64%, 61%);
+    --white:hsl(0, 0%, 100%);
+    --mainpwhite:hsla(0, 0%, 100%, 0.75);
+    --statwhite:hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    font-size: .938rem;
+    font-family: "Inter", sans-serif;
+ 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.container{
+    background-color: var(--dark-desat-blue);
+    display: flex;
+    flex-direction: column;
+    margin: 1.3rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+picture{
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgb(167, 91, 211);
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    mix-blend-mode: multiply;
+    filter: opacity(70%);
+}
+
+h1{
+    color:var(--white);
+    margin: 1em 1.5em;
+    font-size: 1.7em;
+}
+
+span{
+    color: var(--violet);
+}
+
+.discover{
+    text-align: center;
+    color: var(--mainpwhite);
+    line-height: 1.5;
+    margin: 0 2.2em 2em;
+    font-weight: 300;
+
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--statwhite);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .9em;
+    font-weight: 300;
+    margin: 0 5em 0 5em
+}
+
+li{
+    margin-bottom: 2.3em;
+    line-height: 1.5;
+}
+
+.number{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    text-transform: none;
+}
+
+@media screen and (min-width: 60rem){
+    .container{
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    picture{
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+    .text-container{
+        max-width: 26rem;
+        margin: 4.2rem 4rem 1rem 4rem;
+ 
+    }
+
+    h1{
+        font-size: 2.3em;
+        text-align: left;
+        margin: 0 0 2rem 0;
+
+    }
+
+    .discover{
+        text-align: left;
+        line-height: 1.5;
+        margin: 0 0 3rem 0;
+    }
+
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 5rem 0 0 0;
+        text-align: left;
+    }
+
+    li{
+        margin: 0 4rem 0 0;
+    }
+
+}
